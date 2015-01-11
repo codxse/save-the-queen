@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save the Queen</title>
+    <script src="lib/quintus.js"></script>
+    <script src="lib/quintus_sprites.js"></script>
+    <script src="lib/quintus_scenes.js"></script>
+    <script src="lib/quintus_input.js"></script>
+    <script src="lib/quintus_anim.js"></script>
+    <script src="lib/quintus_2d.js"></script>
+    <script src="lib/quintus_touch.js"></script>
+    <script src="lib/quintus_ui.js"></script>
+    <script src="lib/quintus_tmx.js"></script>
+    <script src="lib/quintus_audio.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/enemy.js"></script>
+    <script src="scripts/game.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style> 
+      body { padding:0px; margin:0px; background-color: black;} 
+    </style>
+  </head>
+  <body onload="callModal()">
+  <div class="modal fade bs-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+          <h4 class="modal-title">Save the Queen</h4>
+        </div>
+        <div class="modal-body">
+          <p>In this game your job is to collect all scores as many as possible, kill the enemy, and save the queen. Use right arrow, top arrow, and left arrow to move.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="asset/js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="asset/js//bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function callModal(){
+      $(".bs-modal").modal();
+    }
+
+    </script>
+  </body>
+</html>
