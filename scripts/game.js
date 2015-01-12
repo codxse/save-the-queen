@@ -32,7 +32,7 @@ window.addEventListener("load",function() {
     });
 
     Q.scene("winGame",function(stage) {
-        alert("You Won");
+        alert("Well Done!! You had save the Queen, her father will proud of you!!");
         window.location = "";
     });
 
