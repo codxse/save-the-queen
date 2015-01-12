@@ -63,13 +63,14 @@ window.addEventListener("load",function() {
                 y: -17
             }),statsContainer);
 
+        /*
         var timer = stage.insert(new Q.UI.Text({ 
                 label: "00:00:00",
                 color: "white",
                 x: 125,
                 y: -17
             }),statsContainer);
-            
+         */   
          
     });
 
