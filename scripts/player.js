@@ -7,7 +7,7 @@ Quintus.ActionPlatformerPlayer = function(Q) {
         jumpSpeed: -300,
         speed: 100,
         isJumping: false,
-        lives: 1,
+        lives: 9999,
         coins: 0
       });
       this.add("2d, platformerControls");         
@@ -34,9 +34,9 @@ Quintus.ActionPlatformerPlayer = function(Q) {
       this.on("hit.sprite",function(collision) {
           if(collision.obj.isA("Energy")) {
               collision.obj.destroy();
-              this.p.lives++;
-              var livesLabel = Q("UI.Text",1).first();
-              livesLabel.p.label = "Lives x "+this.p.lives;
+              //this.p.lives++;
+              //var livesLabel = Q("UI.Text",1).first();
+              //livesLabel.p.label = "Lives x "+this.p.lives;
               Q.audio.play("coin.mp3");
               
           }
@@ -66,6 +66,7 @@ Quintus.ActionPlatformerPlayer = function(Q) {
           this.p.timeInvincible = 1;
           
 
+          /*
           if(this.p.lives<0) {
               this.destroy();
               Q.stageScene("endGame",1, { label: "Game Over" }); 
@@ -75,6 +76,8 @@ Quintus.ActionPlatformerPlayer = function(Q) {
               var livesLabel = Q("UI.Text",1).first();
               livesLabel.p.label = "Lives x "+this.p.lives;
           }
+          */
+          
           Q.audio.play("jump.mp3");
       }      
       //Q.stageScene("level");    

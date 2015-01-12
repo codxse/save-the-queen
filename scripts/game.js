@@ -50,7 +50,7 @@ window.addEventListener("load",function() {
         );
             
         var lives = stage.insert(new Q.UI.Text({ 
-                label: "Lives x 1",
+                label: "Lives x ∞",
                 color: "white",
                 x: -125,
                 y: -17
